@@ -23,3 +23,19 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+.titulo-pricipal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+.titulo-pricipal span {
+    color: var(--verde);
+}
+.botao{
+    font-family:"chakra Petch" , sans-serif ; 
+    background-color: var(--botao-inativo);
+    color: var(--verde);
+    display: flex;
+    justify-content: ;
+
+}
