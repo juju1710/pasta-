@@ -13,7 +13,9 @@ for(let i=0 ; i < botoes.length ; i ++){
 }
 
 const cotadores = document.querySelectorAll(".contador");
-const tempoObjetivo1= new date ("2024-03-25T00:00:00");
+const tempoObjetivo1= new date ("2024-17-06T00:00:00"); 
+constTempo= [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4 ];
+contadores[0].textContent= calcularTempo (tempos[0]);
 
 contadores [0]. textContent = calculaTempo ( tempoObjetivo1) ;
  function calculaTempo(tempoObjetivo) {
