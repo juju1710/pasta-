@@ -15,7 +15,6 @@ for(let i=0 ; i < botoes.length ; i ++){
 const cotadores = document.querySelectorAll(".contador");
 const tempoObjetivo1= new date ("2024-17-06T00:00:00"); 
 constTempo= [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4 ];
-contadores[0].textContent= calcularTempo (tempos[0]);
 
 contadores [0]. textContent = calculaTempo ( tempoObjetivo1) ;
  function calculaTempo(tempoObjetivo) {
@@ -28,5 +27,19 @@ contadores [0]. textContent = calculaTempo ( tempoObjetivo1) ;
     segundos % = 60;
     minutos % =60;
     horas % = 24;
+    if(tempoFinal>0){
     return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos"
+} else {
+    return "prazo finalizado";
 }
+ }
+function atualizaCronometro(){
+    for( let i= 0,i<contadores.lenght;i++){
+        contadores[i].textContent= calculaTempo(tempos[i]);
+    }
+}
+function comecaCromonometro(){
+    atualizaCronometro();
+    set Interval (atualizaCronometro,1000);
+}
+comecaCromonometro(); 
